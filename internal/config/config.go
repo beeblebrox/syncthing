@@ -176,6 +176,7 @@ type OptionsConfiguration struct {
 	ProgressUpdateIntervalS int      `xml:"progressUpdateIntervalS" json:"progressUpdateIntervalS" default:"5"`
 	SymlinksEnabled         bool     `xml:"symlinksEnabled" json:"symlinksEnabled" default:"true"`
 	LimitBandwidthInLan     bool     `xml:"limitBandwidthInLan" json:"limitBandwidthInLan" default:"false"`
+	ConcurrentPeerLimit     int      `xml:"concurrentPeerLimit" json:"concurrentPeerLimit" default:"1"`
 
 	Deprecated_RescanIntervalS int    `xml:"rescanIntervalS,omitempty" json:"-"`
 	Deprecated_UREnabled       bool   `xml:"urEnabled,omitempty" json:"-"`
